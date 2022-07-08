@@ -1,6 +1,14 @@
-const Emoji = ({ label, symbol }: { label?: string; symbol: string }) => (
+const Emoji = ({
+  label,
+  symbol,
+  classes = "",
+}: {
+  label?: string;
+  symbol: string;
+  classes?: string;
+}) => (
   <span
-    className="emoji"
+    className={`emoji ${classes}`}
     role="img"
     aria-label={label ? label : ""}
     aria-hidden={label ? "false" : "true"}
