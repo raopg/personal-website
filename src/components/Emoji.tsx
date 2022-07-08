@@ -1,4 +1,4 @@
-const Emoji = ({
+export const Emoji = ({
   label,
   symbol,
   classes = "",
@@ -16,5 +16,3 @@ const Emoji = ({
     {symbol}
   </span>
 );
-
-export default Emoji;

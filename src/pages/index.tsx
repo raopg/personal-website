@@ -1,8 +1,13 @@
 import type { NextPage } from "next";
-import Emoji from "@/components/Emoji";
+import { Emoji, Link } from "@components";
 import Head from "next/head";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
 import { MdEmail } from "react-icons/md";
+import {
+  EMAIL,
+  GITHUB_PROFILE,
+  LINKEDIN_PROFILE,
+} from "@constants/externalLinks";
 
 const Home: NextPage = () => {
   return (
@@ -17,15 +22,15 @@ const Home: NextPage = () => {
       />
       <div className="text-4xl p-8 ml-8">I&#8217;m Prateek Rao</div>
       <div className="flex flex-row justify-space-between">
-        <button className="w-10 h-10 flex justify-center items-center">
-          <BsGithub className="text-2xl" />
-        </button>
-        <button className="w-10 h-10 flex justify-center items-center">
-          <BsLinkedin className="text-2xl" />
-        </button>
-        <button className="w-10 h-10 flex justify-center items-center">
-          <MdEmail className="text-2xl" />
-        </button>
+        <Link to={GITHUB_PROFILE}>
+          <BsGithub className="text-2xl cursor-pointer" />
+        </Link>
+        <Link to={LINKEDIN_PROFILE}>
+          <BsLinkedin className="text-2xl cursor-pointer" />
+        </Link>
+        <Link to={EMAIL}>
+          <MdEmail className="text-2xl cursor-pointer" />
+        </Link>
       </div>
     </div>
   );
