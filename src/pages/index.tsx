@@ -28,9 +28,6 @@ const Home: NextPage = () => {
         <Link to={EMAIL}>
           <MdEmail className="text-3xl cursor-pointer" />
         </Link>
-        <Link to={RESUME}>
-          <MdDownload className="text-3xl cursor-pointer" />
-        </Link>
       </div>
     </div>
   );
