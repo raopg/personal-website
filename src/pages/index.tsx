@@ -25,7 +25,7 @@ const Home: NextPage = () => {
           <BsLinkedin className="text-2xl cursor-pointer" />
         </Link>
         <Link to={EMAIL}>
-          <MdEmail className="text-2xl cursor-pointer" />
+          <MdEmail className="text-3xl cursor-pointer" />
         </Link>
       </div>
     </div>
