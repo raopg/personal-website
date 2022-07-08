@@ -17,9 +17,9 @@ module.exports = {
           "60%": { transform: "rotate(0.0deg)" },
           "100%": { transform: "rotate(0.0deg)" },
         },
-        animation: {
-          "waving-hand": "wave 2s linear infinite",
-        },
+      },
+      animation: {
+        wave: "wave 1.5s",
       },
     },
   },

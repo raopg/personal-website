@@ -15,11 +15,7 @@ const Home: NextPage = () => {
       <Head>
         <title>Prateek Rao</title>
       </Head>
-      <Emoji
-        label="waving-hand"
-        symbol="👋"
-        classes="animate-waving-hand text-6xl"
-      />
+      <Emoji label="waving-hand" symbol="👋" classes="animate-wave text-6xl" />
       <div className="text-4xl p-8 ml-8">I&#8217;m Prateek Rao</div>
       <div className="flex flex-row justify-space-between">
         <Link to={GITHUB_PROFILE}>
