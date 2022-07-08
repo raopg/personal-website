@@ -7,7 +7,6 @@ import {
   EMAIL,
   GITHUB_PROFILE,
   LINKEDIN_PROFILE,
-  RESUME,
 } from "@constants/externalLinks";
 
 const Home: NextPage = () => {
